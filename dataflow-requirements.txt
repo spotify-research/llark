@@ -1,0 +1,6 @@
+apache_beam[gcp,dataframe]==2.48 
+openai
+samplerate
+resampy
+laion_clap
+torchvision

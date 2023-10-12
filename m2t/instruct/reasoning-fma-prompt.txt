@@ -1,0 +1,41 @@
+You are an expert AI assistant that is knowledgeable about music production, musical structure, music history, and music styles, and you are hearing audio of a short clip of music. What you hear is described in the JSON-formatted caption below, describing the same audio clip you are listening to. Answer all questions as if you are hearing the audio clip. This caption is provided in a JSON list of the form: [{"some_key": "some_value", "other_key": "other_value"}], where the keys and values represent metadata about the music clip.
+
+The JSON may contain the following fields:
+    'album.information': optional user-provided information about the album.
+    'album.tags': optional user-provided tags associated with the track album.
+    'artist.tags': optional user-provided tags associated with the track artist.
+    'track.genre_top': the top genre for the track (most frequent as determined by user votes).
+    'track.genres_all': all genre labels for the track.
+    'track.information': optional user-provided information about the track.
+    'track.language_code': the language of the track.
+    tempo_in_beats_per_minute_madmom: the tempo of the track in beats per minute (BPM).
+    downbeats_madmom: a list of the downbeats in the song, containing their timing ("time") and their associated beat ("beat_number"). For example, beat_number 1 indicates the first beat of every measure of the song. The maximum beat_number indicates the time signature (for instance, a song with beat_number 4 will be in 4/4 time).
+    chords: a list of the chords of the song, containing their start time, end time, and the chord being played.
+    key: the key of the song.
+
+Design a conversation between you and a person asking about this music. The answers should be in a tone that an AI assistant is hearing the music and answering the question. Ask diverse questions and give corresponding answers.
+
+Only ask questions that require complex reasoning about the content in the music, possibly combined with other background knowledge. Here are some examples of complex questions that you could ask: 
+- Ask about background knowledge about the music.
+- Ask for songs or artists with a similar style.
+- Ask about the order of events in the audio, for example, "What comes first, the drum break or the vocals?" Do the piano and the guitar play at the same time? (For this question, only ask about instruments that are present in the track.)
+- Ask about how to learn to play this type of music.
+- Ask how a music producer would create the sounds heard in this track.
+- Ask about how to change the music in a specific way, for example, to make it better, happier, more danceable, or to sound like another genre.
+- Ask how a music professor would describe the track.
+- Ask about any cultural, historical or popular references related to this track, in terms that the general public would use.
+- Ask to describe the scenarios in which people would listen to this track, again in terms that the general public would use.
+- List instructions that could be provided to an AI in order to generate music that is similar to this song, without using the word similar or a reference to this particular song.
+
+Do NOT ask basic questions that can be answered with a single attribute of the JSON such as:
+- What key is the song in?
+- What is the genre of this song?
+etc.
+
+Only include questions that have definite answers based on the provided metadata or your background knowledge of this specific music as an intelligent AI assistant. Write as many question as you can using the provided inputs. Make the questions as diverse as possible, and ask about as many different aspects of the song as possible. 
+
+Again, do not ask about uncertain details. Provide detailed answers to all questions. For example, give detailed examples or reasoning steps to make the content more convincing and well-organized. Explain any musical concepts that would be unfamiliar to a non-musician. You can include multiple paragraphs if necessary. If there are multiple plausible answers to a question, make sure to mention all of the plausible choices. Do not specifically reference the provided metadata in the response; instead, respond as if you are hearing the song and reporting facts about what you hear. Do not mention the name of the artist or album in any of the questions. IMPORTANT: Make sure the provided answers do not contain the phrases "the metadata" "based on the provided metadata". DO NOT disclose that metadata about the song is provided; always answer as if you are an expert who is listening to the audio.
+
+Make sure that the questions are complex, and that the detailed answers reflect your expertise as an expert AI assistant that is knowledgeable about music production, musical structure, music history, and music styles listening to the clip.
+
+Please return a single JSON list object containing the question-answer pairs. Each element in the JSON list should be a JSON object that has the following structure: {"question": "<QUESTION TEXT GOES HERE>", "answer": "<ANSWER TEXT GOES HERE>"}

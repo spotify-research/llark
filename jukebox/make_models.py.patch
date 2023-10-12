@@ -1,0 +1,11 @@
+--- make_models.py	2021-06-10 16:43:45.195677646 -0700
++++ make_models.py.patched	2021-06-10 16:44:03.111348075 -0700
+@@ -58,7 +58,7 @@
+         #     if checkpoint_hps.get(k, None) != hps.get(k, None):
+         #         print(k, "Checkpoint:", checkpoint_hps.get(k, None), "Ours:", hps.get(k, None))
+         checkpoint['model'] = {k[7:] if k[:7] == 'module.' else k: v for k, v in checkpoint['model'].items()}
+-        model.load_state_dict(checkpoint['model'])
++        model.load_state_dict(checkpoint['model'], strict=False)
+         if 'step' in checkpoint: model.step = checkpoint['step']
+ 
+ def restore_opt(opt, shd, checkpoint_path):
