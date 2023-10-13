@@ -1,4 +1,3 @@
-# same env as shama-jukebox-noconda.dockerfile, but with different entrypoint
 FROM apache/beam_python3.7_sdk:2.24.0
 ENV INSTALLER_DIR="/tmp/installer_dir"
 
