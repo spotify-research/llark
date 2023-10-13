@@ -11,7 +11,7 @@ This is the code release associated with the paper:
 
 This repository contains the code used to build the training dataset, preprocess existing open-source music datasets, train the model, and run inference. **Note that this paper is not accompanied with any trained models.**
 
-For more details about this work, you can read the [preprint of the paper](https://arxiv.org/abs/2310.07160), read the [Spotify Research blog post] about this work, and [listen to demos on the companion site](https://storage.googleapis.com/music2text-public/index.html).
+For more details about this work, you can read the [preprint of the paper](https://arxiv.org/abs/2310.07160), read the [Spotify Research blog post](https://research.atspotify.com/2023/10/llark-a-multimodal-foundation-model-for-music/) about this work, and [listen to demos on the companion site](https://storage.googleapis.com/music2text-public/index.html).
 
 **This is not an officially supported Spotify product.**
 
