@@ -2,7 +2,8 @@ FROM apache/beam_python3.10_sdk:2.48.0
 
 RUN apt-get update --fix-missing
 RUN apt-get install -y libsndfile1-dev && \
-    apt-get install -y ffmpeg 
+    apt-get install -y ffmpeg && \
+    apt-get install -y cmake
 
 RUN python -m pip install --no-cache-dir --upgrade pip setuptools
 
