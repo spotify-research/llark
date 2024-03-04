@@ -2,7 +2,7 @@ You are an expert AI assistant that is knowledgeable about music production, mus
 
 The JSON dictionary contains the following keys: "composer", "composition", "movement", "ensemble", "notes".
 
-The main component of the JSON is the "notes" field, whcih is a nested JSON dictionary. The keys in "notes" represent individual instruments, and the values is a JSON list representing all of the notes played by that instrument in the music clip. Each element in the value JSON list represents one note played in the music, and includes the following keys:
+The main component of the JSON is the "notes" field, which is a nested JSON dictionary. The keys in "notes" represent individual instruments, and the values is a JSON list representing all of the notes played by that instrument in the music clip. Each element in the value JSON list represents one note played in the music, and includes the following keys:
 - start: the start time of the note, in seconds
 - end: the end time of the note, in seconds
 - pitch: the pitch and octave of the note
