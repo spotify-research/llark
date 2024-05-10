@@ -1,17 +1,19 @@
-# LLark: A Multimodal Foundation Model for Music
+# LLark: A Multimodal Instruction-Following Language Model for Music
 
 ![Static Badge](https://img.shields.io/badge/status-experimental-green)
 
 
 This is the code release associated with the paper:
 
-> LLark: A Multimodal Foundation Model for Music<br />
+> LLark: A Multimodal Instruction-Following Language Model for Music<br />
 > Josh Gardner, Simon Durand, Daniel Stoller, Rachel Bittner.<br />
-> Under Review at ICLR 2024
+> Published at ICML 2024
 
 This repository contains the code used to build the training dataset, preprocess existing open-source music datasets, train the model, and run inference. **Note that this paper is not accompanied with any trained models.**
 
-For more details about this work, you can read the [preprint of the paper](https://arxiv.org/abs/2310.07160), read the [Spotify Research blog post](https://research.atspotify.com/2023/10/llark-a-multimodal-foundation-model-for-music/) about this work, and [listen to demos on the companion site](https://storage.googleapis.com/music2text-public/index.html).
+For more details about this work, you can read the [preprint of the paper](https://arxiv.org/abs/2310.07160), read the [Spotify Research blog post](https://research.atspotify.com/2023/10/llark-a-multimodal-foundation-model-for-music/) about this work, and [listen to 
+demos on the companion site](https://storage.googleapis.com/music2text-public/index.html). 
+See also the [ICML page for the paper](https://icml.cc/virtual/2024/poster/34440).
 
 **This is not an officially supported Spotify product.**
 
@@ -22,10 +24,10 @@ If you use this code in a publication, please cite our paper:
 
 ```
 @article{gardner2023llark,
-  title={LLark: A Multimodal Foundation Model for Music},
+  title={LLark: A Multimodal Instruction-Following Language Model for Music},
   author={Gardner, Josh and Durand, Simon and Stoller, Daniel and Bittner, Rachel},
-  journal={arXiv preprint arXiv:2310.07160},
-  year={2023}
+  journal={Proc. of the International Conference on Machine Learning (ICML)},
+  year={2024}
 }
 ```
 
