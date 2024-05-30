@@ -66,6 +66,9 @@ For using CLAP, we provide a similar set of utilities in the `scripts/clap` subd
 
 This repo does not officially support training. However, we provide scripts that could be adapted to train a model (mostly as a way to describe the exact training hyperparameters used in training) in the `scripts/training` subdirectory. This includes the main LLark model, along with models based on MPT-1B and CLAP.
 
+## Evaluation
+
+For reproducibility, we provide a set of notebooks that define the evaluation procedure used in our paper. These notebooks can be used or modified to support evaluation of other models. Note that in some cases, the notebooks require obtaining the original evaluation datasets ([MusicNet](https://zenodo.org/records/5120004), [MedleyDB](https://medleydb.weebly.com), [GTZAN](https://paperswithcode.com/dataset/gtzan), Giant Steps ([tempo](https://github.com/GiantSteps/giantsteps-tempo-dataset), [key](https://github.com/GiantSteps/giantsteps-key-dataset))). 
 
 ## Contributing
 
